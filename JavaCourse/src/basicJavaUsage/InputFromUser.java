@@ -8,8 +8,10 @@ public class InputFromUser {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Please write something");
 		String s = scanner.nextLine();
-		
-		System.out.println(s);
+		System.out.println("This is what you wrote: " + s);
+
+		// Closing the scanner
+		scanner.close();
 	}
 
 }
