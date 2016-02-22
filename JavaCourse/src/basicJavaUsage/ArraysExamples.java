@@ -1,5 +1,7 @@
 package basicJavaUsage;
 
+import java.util.Arrays;
+
 public class ArraysExamples {
 
 	public static void main(String[] args) {
@@ -9,6 +11,9 @@ public class ArraysExamples {
 		roomNumber[0] = 3;
 		roomNumber[1] = 0;
 		roomNumber[2] = 5;
+		
+		//Printing array
+		System.out.println(Arrays.toString(roomNumber));
 		
 		// It's the same thing, just shorter
 		int[] roomNumber1 = new int[] {3,0,5};
@@ -33,6 +38,8 @@ public class ArraysExamples {
 		for (int i = 0 ; i < matrix[0].length ; i++){
 			System.out.println(matrix[0][i]);
 		}
+		
+		
 		
 		
 		 
