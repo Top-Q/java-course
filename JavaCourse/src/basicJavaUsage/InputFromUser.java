@@ -1,8 +1,8 @@
-package variables;
+package basicJavaUsage;
 
 import java.util.Scanner;
 
-public class InputFromUSer {
+public class InputFromUser {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

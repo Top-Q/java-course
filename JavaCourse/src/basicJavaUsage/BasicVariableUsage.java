@@ -1,4 +1,4 @@
-package variables;
+package basicJavaUsage;
 
 public class BasicVariableUsage {
 
