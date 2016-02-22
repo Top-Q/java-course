@@ -1,6 +1,6 @@
 package basicJavaUsage.exercise;
 
-public class SumAndAvgExercise {
+public class SumAndAvgExerciseWithoutArraysAndLoops {
 
 	public static void main(String[] args) {
 		int x = 3;
