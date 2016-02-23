@@ -7,7 +7,7 @@ public class CalculateInitials {
 	}
 	
 	static void calculateInitilas(String name){
-		// We trim the string because white spaced at the beginning or end of
+		// We trim the  string because white spaced at the beginning or end of
 		// the string will break the logic
 //		String name = "David Ben Gurion".trim();
 
