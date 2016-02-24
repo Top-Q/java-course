@@ -3,6 +3,21 @@ package objectOriented;
 public class MyPersonApplication {
 
 	public static void main(String[] args) {
+		
+		Person fredrik = new Student();
+		
+		Student fredrikTheStudent = (Student)fredrik;
+		fredrikTheStudent.learn();
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		Person john = new Person(111, "John", "Doe");
 
 		john.setGender("Male");
@@ -24,9 +39,9 @@ public class MyPersonApplication {
 		System.out.println("Making everyone walk");
 
 		Person[] people = new Person[3];
-		people[0] = john;
-		people[1] = jane;
-		people[2] = fred;
+		people[0] = john; // Person
+		people[1] = jane; // Person
+		people[2] = fred; // Student
 
 		for (int i = 0 ; i < people.length ; i++){
 			people[i].walk();
