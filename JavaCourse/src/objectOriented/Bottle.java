@@ -4,9 +4,11 @@ public class Bottle {
 
 	private String material;
 	private int height;
-	private double maxCapacity = 1.5;
-	private String color = "White";
-	private double amountInLiters = 0;
+	private double maxCapacity;
+	private String color;
+	private double amountInLiters;
+	
+	private Cork cork;
 
 	Bottle() {
 	}
@@ -14,14 +16,16 @@ public class Bottle {
 	Bottle(double maxCapacity) {
 		this.maxCapacity = maxCapacity;
 	}
-	
+
 	Bottle(double maxCapacity, String color) {
 		this.maxCapacity = maxCapacity;
 		this.color = color;
 	}
 
-
 	void fillWithLiquid(double amountInLitersToFill) {
+		if (amountInLitersToFill < 0){
+			amountInLitersToFill = 0;
+		}
 		if (amountInLiters + amountInLitersToFill > maxCapacity) {
 			amountInLiters = maxCapacity;
 		} else {
