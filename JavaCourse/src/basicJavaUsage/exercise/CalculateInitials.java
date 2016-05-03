@@ -3,10 +3,10 @@ package basicJavaUsage.exercise;
 public class CalculateInitials {
 
 	public static void main(String[] args) {
-		calculateInitilas("David ben Gurion");
+		calculateInitials("David ben Gurion");
 	}
 	
-	static void calculateInitilas(String name){
+	static void calculateInitials(String name){
 		// We trim the  string because white spaced at the beginning or end of
 		// the string will break the logic
 //		String name = "David Ben Gurion".trim();
