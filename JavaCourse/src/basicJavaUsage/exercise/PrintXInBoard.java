@@ -10,9 +10,7 @@ public class PrintXInBoard {
 				} else {
 					System.out.print(" o ");
 				}
-				System.out.print(" o ");
 			}
-
 			System.out.println("");
 		}
 	}
