@@ -5,37 +5,37 @@ public class BF {
 	public static void execute(String input) throws Exception {
 		char[] program = input.toCharArray();
 		int[] data = new int[100];
-		int counter = 0;
+		int dataPointer = 0;
 		int label = 0;
-		for (int i = 0; i < program.length; i++) {
-			switch (program[i]) {
+		for (int instructionPointer = 0; instructionPointer < program.length; instructionPointer++) {
+			switch (program[instructionPointer]) {
 			case '>':
-				counter++;
+				dataPointer++;
 				break;
 			case '<':
-				counter--;
+				dataPointer--;
 				break;
 			case '+':
-				data[counter]++;
+				data[dataPointer]++;
 				break;
 			case '-':
-				data[counter]--;
+				data[dataPointer]--;
 				break;
 			case ',':
-				data[counter] = System.in.read();
+				data[dataPointer] = System.in.read();
 				break;
 			case '.':
-				System.out.print((char)data[counter]);
+				System.out.print((char)data[dataPointer]);
 				break;
 			case '[':
-				label = i;
+				label = instructionPointer;
 				break;
 			case ']':
-				if (data[counter] <= 0){
+				if (data[dataPointer] <= 0){
 					label = 0;
 					break;
 				}
-				i = label;
+				instructionPointer = label;
 				break;
 			}
 		}
