@@ -1,4 +1,4 @@
-package basicJavaUsage.exercise.blackjack;
+package objectOriented.exercise.war;
 
 public class Game {
 
